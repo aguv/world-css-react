@@ -17,3 +17,11 @@ export const getCodes = async (): Promise<CodeType[]> =>
 // export const getCodes = async () =>
 //     await axios.get('https://restcountries.eu/rest/v2/all')
 //         .then(({ data }) => data.reduce((acc: ObjectCodes, country: CountryInterface) => acc[country.alpha2Code] = country.name));
+
+export const createArray = (num: number) => {
+    const arr = [];
+    for(let i: number = 0; i < num; i++) {
+        arr.push('');
+    }
+    return arr;
+}

@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Navbar.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMoon } from '@fortawesome/free-regular-svg-icons'
+import { faMoon, faLightbulb } from '@fortawesome/free-solid-svg-icons'
 
 const Navbar = ({toggleTheme, theme}: any) => {
     return (
@@ -9,8 +9,8 @@ const Navbar = ({toggleTheme, theme}: any) => {
             <p className={`${styles.title}`}>
                 Where in the world?
             </p>
-            <div className={styles.darkMode} onClick={toggleTheme}>
-                <FontAwesomeIcon icon={faMoon} className={styles.icon}/>
+            <div className={styles.mode} onClick={toggleTheme}>
+                <FontAwesomeIcon icon={theme === 'light' ? faMoon : faLightbulb } className={styles.icon}/>
                 <span className={`${styles.text}`}>{theme === 'light' ? 'Dark' : 'Light'}</span>
             </div>
         </div>

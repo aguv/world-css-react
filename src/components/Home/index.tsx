@@ -3,7 +3,7 @@ import styles from './Home.module.scss';
 import Search from '../Search';
 import Filter from '../Filter';
 import Countries from '../Countries';
-import { CountryInterface } from '../interfaces';
+import { CountryInterface } from '../../interfaces';
 import axios from 'axios';
 
 const Home = () => {
@@ -18,8 +18,9 @@ const Home = () => {
     const filterByRegion = (region: string):any => setCountries(initialCountries!.filter((country: CountryInterface) => country.region === region));
     const showAll = (): any => setCountries(initialCountries);
     const handleSearch = (word: string) => {
-        setCountries(initialCountries!.filter(country => country.name.toLowerCase().includes(word)));
+        setCountries(initialCountries!.filter(country => country.name.toLowerCase().includes(word.toLowerCase())));
     }
+
 
     return (
         <div className={styles.body}>

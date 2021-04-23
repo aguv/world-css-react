@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './CountryCard.module.scss';
-import { CountryInterface } from '../interfaces';
+import { CountryInterface } from '../../interfaces';
 import { Link } from 'react-router-dom';
 
 type AppProps = {

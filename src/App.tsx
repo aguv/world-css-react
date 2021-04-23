@@ -16,7 +16,7 @@ function App() {
       <Navbar toggleTheme={toggleTheme} theme={theme}/>
       <Switch>
         <Route exact path='/' render={() => <Home />} />
-        <Route path='/:name' render={({match}) => <SingleCountry match={match}/>} />
+        <Route path='/:name' render={({match}) => <SingleCountry match={match} theme={theme}/>} />
       </Switch>
     </div>
   )
