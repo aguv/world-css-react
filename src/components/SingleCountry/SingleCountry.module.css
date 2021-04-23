@@ -14,13 +14,14 @@
     height    : auto;
 }
 
-.title {
-    margin-top: 1rem;
-}
 
 .info {
     display        : flex;
     justify-content: space-around;
+}
+
+.title {
+    margin-bottom: 2rem;
 }
 
 .back {
@@ -179,9 +180,9 @@
 
 }
 
-@media only screen and (max-width: 530px) and (min-width: 401px) {
+@media only screen and (max-width: 631px) and (min-width: 401px) {
     .data {
-        margin-top: 2rem;
+        margin-top: 4rem;
     }
 }
 
