@@ -1,17 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
 
-
 .App {
-  background-color: var(--theme-page-background);
   transition      : all .2s ease-in-out;
-  height: 100vh;
-}
-
-@media screen and (max-width: 400px) {
-  .App {
-    height: 100%; 
-    width: 100%;
-  }
+  background-color: var(--theme-page-background);
+  height: 100%;
 }
 
 body {
@@ -19,6 +11,5 @@ body {
   font-family: 'Nunito Sans', sans-serif;
   -webkit-font-smoothing : antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--theme-page-background);
+  height: 100%;
 }
-
