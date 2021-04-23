@@ -55,3 +55,14 @@
     -webkit-transform: rotate(360deg);
     -o-transform     : rotate(360deg);
 }
+
+@media screen and (max-width: 620px) {
+    .nav {
+        padding: 0 2rem;
+        font-size: 1rem;
+    }
+
+    .title {
+        font-size: 1.1rem;
+    }
+}

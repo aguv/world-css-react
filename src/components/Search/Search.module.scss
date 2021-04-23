@@ -22,3 +22,10 @@
     background-color: var(--theme-page-background-elements);
     color: var(--theme-input-color)
 }
+
+@media screen and (max-width: 660px) {
+    .searchbar {
+        width: 88%;
+        margin-bottom: 0.5rem;
+    }
+}

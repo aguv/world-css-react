@@ -3,9 +3,21 @@
     display: flex;
     width: 70%;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .empty {
     width: 24.5%;
 }
+
+@media screen and (max-width: 863px) { 
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 676px) {
+    .container {
+        justify-content: center;
+    }
+} 

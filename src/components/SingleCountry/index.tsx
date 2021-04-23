@@ -64,7 +64,7 @@ const SingleCountry = ({ match, theme }: PropsType) => {
                     <div className={styles.info}>
                         <img className={styles.img} src={country?.flag} />
                         <div className={styles.data}>
-                            <h1>{country?.name}</h1>
+                            <h1 className={styles.title}>{country?.name}</h1>
                             <div className={styles.description}>
                                 <div>
                                     <span><span>Native name:</span> {country?.nativeName}</span>

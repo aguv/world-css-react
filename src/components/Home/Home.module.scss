@@ -13,3 +13,10 @@
     display: flex;
     justify-content: space-between;
 }
+
+@media screen and (max-width: 660px) {
+    .search {
+        flex-direction: column;
+        height: 6.5rem;
+    }
+}
