@@ -1,0 +1,36 @@
+.nav {
+    background-color: var(--theme-page-background-elements);
+    height          : 5rem;
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+    padding         : 0 6.3rem;
+    font-weight     : bold;
+    box-shadow      : 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+    color           : var(--theme-color)
+}
+
+.title {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size  : 1.7rem;
+}
+
+.text {
+    font-weight: 600;
+}
+
+.darkMode {
+    height     : 60%;
+    display    : flex;
+    align-items: center;
+    cursor     : pointer;
+}
+
+.darkMode:hover {
+    transform: translate(-2px, -3px);
+    color    : var(--theme-color-hover);
+}
+
+.icon {
+    margin-right: 0.3rem;
+}

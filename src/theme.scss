@@ -1,0 +1,17 @@
+.light {
+    --theme-color: hsl(200, 15%, 8%);
+    --theme-page-background: hsl(0, 0%, 98%);
+    --theme-page-background-elements:hsl(0, 0%, 100%);
+    --theme-input-color: hsl(0, 0%, 52%);
+    --theme-color-hover: rgb(172, 90, 90);
+    --theme-scale-shadow: rgba(99, 19, 59, 0.3);
+}
+
+.dark {
+    --theme-color: hsl(0, 0%, 100%);
+    --theme-page-background: hsl(207, 26%, 17%);
+    --theme-page-background-elements:hsl(209, 23%, 22%);
+    --theme-input-color: hsl(0, 0%, 52%);
+    --theme-color-hover: rgb(90, 118, 170);
+    --theme-scale-shadow: rgba(133, 129, 131, 0.3);
+}
