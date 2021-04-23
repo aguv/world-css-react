@@ -3,7 +3,13 @@
 .App {
   transition      : all .2s ease-in-out;
   background-color: var(--theme-page-background);
-  height: 100%;
+  height: 100vh;
+}
+
+@media screen and (max-width: 375px) {
+  .App {
+    height: 100%;
+  }
 }
 
 body {
