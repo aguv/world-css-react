@@ -9,7 +9,7 @@ type FilterProps = {
 }
 
 const Filter = ({ filterByRegion, showAll }: FilterProps) => {
-    const [region, setRegion] = useState<string>('Filter by Region')
+    const [region, setRegion] = useState<string>('Region')
 
     const handlerFilter = (e: MouseEvent<HTMLDivElement>) => {
         setRegion(e.currentTarget.innerText);

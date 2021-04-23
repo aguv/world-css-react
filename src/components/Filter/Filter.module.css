@@ -60,7 +60,7 @@
 .dropdown__select,
 .dropdown__item {
   width          : 85%;
-  padding        : 0.9rem 1rem;
+  padding        : 0.9rem 0 0.9rem 1.5rem;
   display        : flex;
   justify-content: space-between;
   cursor         : pointer;
