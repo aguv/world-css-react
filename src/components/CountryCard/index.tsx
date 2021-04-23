@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './CountryCard.module.scss';
+import styles from './CountryCard.module.css';
 import { CountryInterface } from '../../interfaces';
 import { Link } from 'react-router-dom';
 

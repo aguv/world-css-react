@@ -5,8 +5,6 @@
     width           : 75%;
     padding         : 2rem;
     font-family     : 'Nunito Sans', sans-serif;
-    color           : hsl(200, 15%, 8%);
-    background-color: var(--theme-page-background);
 }
 
 .img {
@@ -29,7 +27,7 @@
     height          : auto;
     margin-bottom   : 4rem;
     background-color: var(--theme-page-background-elements);
-    width           : 9%;
+    width           : 12%;
     padding         : 0.6rem;
     text-decoration : none;
     text-align      : center;
@@ -145,12 +143,12 @@
     }
 
     .back {
-        font-size: 0.7rem;
-        width    : 16%;
+        font-size: 0.8rem;
+        width    : 18%;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
     .description {
         flex-direction: column;
         margin-top: 1;
@@ -167,6 +165,10 @@
     .restCountries {
         margin-top: 0rem;
     }
+
+    .back {
+        width: 33%;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -180,5 +182,15 @@
 @media only screen and (max-width: 530px) and (min-width: 401px) {
     .data {
         margin-top: 2rem;
+    }
+}
+
+.single {
+    height: 100vh;
+}
+
+@media screen and (max-height: 750px) {
+    .single {
+        height: 100%;
     }
 }

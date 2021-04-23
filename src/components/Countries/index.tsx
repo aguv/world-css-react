@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import styles from './Countries.module.scss';
+import styles from './Countries.module.css';
 import CountryCard from '../CountryCard';
 import {CountryInterface} from '../../interfaces'
 import {createArray} from '../../assets';

@@ -3,8 +3,8 @@ import { Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import SingleCountry from './components/SingleCountry';
-import './theme.scss';
-import './App.scss';
+import './theme.css';
+import './App.css';
 
 function App() {
   const [theme, setTheme] = useState<string>('light');

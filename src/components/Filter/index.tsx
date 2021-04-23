@@ -1,5 +1,5 @@
 import React, { useState, MouseEvent } from 'react'
-import styles from './Filter.module.scss';
+import styles from './Filter.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSortDown } from '@fortawesome/free-solid-svg-icons'
 

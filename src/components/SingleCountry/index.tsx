@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import styles from './SingleCountry.module.scss'
+import styles from './SingleCountry.module.css'
 import axios from 'axios';
 import { MatchInterface } from '../../interfaces';
 import { CountryInterface } from '../../interfaces';
@@ -41,52 +41,55 @@ const SingleCountry = ({ match, theme }: PropsType) => {
     }, [match])
 
     return (
-        <div className={styles.container}>
-            <Link to='/' className={styles.back}>
-                <FontAwesomeIcon icon={faArrowLeft} style={{ marginRight: '0.5rem' }} />
-                Back
-            </Link>
-            {loading ?
-                (
-                    <div className={styles.loader}>
-                        <Loader
-                            type="Rings"
-                            color={theme === 'light' ? '#204060' : 'white'}
-                            height={100}
-                            width={100}
-                            timeout={10000} //3 secs
-                        />
-                    </div>   
-                )
-                :
+        <div className={styles.single}>
+            <div className={styles.container}>
+                <Link to='/' className={styles.back}>
+                    <FontAwesomeIcon icon={faArrowLeft} style={{ marginRight: '0.5rem' }} />
+                    Back
+                </Link>
+                {loading ?
+                    (
+                        <div className={styles.loader}>
+                            <Loader
+                                type="Rings"
+                                color={theme === 'light' ? '#204060' : 'white'}
+                                height={100}
+                                width={100}
+                                timeout={10000} //3 secs
+                            />
+                        </div>   
+                    )
+                    :
 
-                (
-                    <div className={styles.info}>
-                        <img className={styles.img} src={country?.flag} />
-                        <div className={styles.data}>
-                            <h1 className={styles.title}>{country?.name}</h1>
-                            <div className={styles.description}>
-                                <div>
-                                    <span><span>Native name:</span> {country?.nativeName}</span>
-                                    <span><span>Population:</span> {country?.population}</span>
-                                    <span><span>Region:</span> {country?.region}</span>
-                                    <span><span>Subregion:</span> {country?.subregion}</span>
-                                    <span><span>Capital:</span> {country?.capital}</span>
+                    (
+                        <div className={styles.info}>
+                            <img className={styles.img} src={country?.flag} />
+                            <div className={styles.data}>
+                                <h1 className={styles.title}>{country?.name}</h1>
+                                <div className={styles.description}>
+                                    <div>
+                                        <span><span>Native name:</span> {country?.nativeName}</span>
+                                        <span><span>Population:</span> {country?.population}</span>
+                                        <span><span>Region:</span> {country?.region}</span>
+                                        <span><span>Subregion:</span> {country?.subregion}</span>
+                                        <span><span>Capital:</span> {country?.capital}</span>
+                                    </div>
+                                    <div>
+                                        <span><span>Top level domain:</span> {country?.topLevelDomain}</span>
+                                        <span><span>Currencies:</span> {country?.currencies.map(currency => currency.name).join(', ')}</span>
+                                        <span><span>Languages:</span> {country?.languages.map(lang => lang.name).join(', ')}</span>
+                                    </div>
                                 </div>
-                                <div>
-                                    <span><span>Top level domain:</span> {country?.topLevelDomain}</span>
-                                    <span><span>Currencies:</span> {country?.currencies.map(currency => currency.name).join(', ')}</span>
-                                    <span><span>Languages:</span> {country?.languages.map(lang => lang.name).join(', ')}</span>
+                                <div className={styles.restCountries}>
+                                    <span className={styles.bordertitle}>{typeof borders !== 'string' ? 'Border countries:' : ''}</span>
+                                    {typeof borders !== 'string' ? borders?.map((border: CountryInterface, i: number) => <Link key={i} to={`/${border.name}`} className={styles.bordersLink}>{border.name.split('(')[0]}</Link>) : `${borders}`}
                                 </div>
-                            </div>
-                            <div className={styles.restCountries}>
-                                <span className={styles.bordertitle}>{typeof borders !== 'string' ? 'Border countries:' : ''}</span>
-                                {typeof borders !== 'string' ? borders?.map((border: CountryInterface, i: number) => <Link key={i} to={`/${border.name}`} className={styles.bordersLink}>{border.name.split('(')[0]}</Link>) : `${borders}`}
                             </div>
                         </div>
-                    </div>
-                )
-            }
+                    )
+                }
+            </div>
+
         </div>
     )
 }
