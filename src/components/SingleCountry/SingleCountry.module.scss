@@ -134,6 +134,10 @@
     .title {
         margin: 3rem 0;
     }
+
+    .restCountries {
+        margin-top: 1rem;
+    }
 }
 
 @media screen and (max-width: 1050px) {
@@ -157,5 +161,12 @@
 
     .data {
         margin-top: 1rem;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .restCountries {
+        margin-top: 0rem;
     }
 }
