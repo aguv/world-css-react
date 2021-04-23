@@ -10,9 +10,9 @@
 }
 
 .img {
-    min-width : 43%;
-    max-width : 43%;
-    min-height: 23rem;
+    min-width: 43%;
+    max-width: 43%;
+    height: auto;
     max-height: 23rem;
 }
 
@@ -127,7 +127,7 @@
     .img {
         width     : 100%;
         max-width : 600px;
-        max-height: 350x;
+        max-height: 350px;
         height    : auto;
     }
 
@@ -151,26 +151,11 @@
 @media screen and (max-width: 600px) {
     .description {
         flex-direction: column;
-        margin-top: -2.3rem;
+        margin-top: 1;
         margin-bottom: 1rem;
     }
 
-    .back {
-        font-size: 0.7rem;
-        width    : 25%;
-    }
-
     .data {
-        margin-top: -3rem;
-    }
-
-    .img {
-        margin-top: -2.5rem;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .img {
-        margin-top: -4.5rem;
+        margin-top: 1rem;
     }
 }
