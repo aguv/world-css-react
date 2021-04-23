@@ -7,7 +7,8 @@
     padding         : 0 6.3rem;
     font-weight     : bold;
     box-shadow      : 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
-    color           : var(--theme-color)
+    color           : var(--theme-color);
+    position: relative;
 }
 
 .title {
