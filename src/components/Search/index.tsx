@@ -8,7 +8,7 @@ const Search = ({handleSearch}: any) => {
     return (
         <div className={styles.searchbar}>
             <FontAwesomeIcon icon={faSearch}/>
-            <input placeholder='Search for a country...' className={`${styles.input}`} onChange={e => handleSearch(e.target.value)} />
+            <input placeholder='Search...' className={`${styles.input}`} onChange={e => handleSearch(e.target.value)} />
         </div>
     )
 }
